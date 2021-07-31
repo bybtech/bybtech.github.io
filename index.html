@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html class="flx-animate-left">
+   <head>
+      <title>BLE Demo</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" href="flx.css">
+	  
+   </head>
+   <body onload="loadPaired()">
+      <div class="flx-container">
+         <h4>BLE Devices</h4>
+         <ul class="flx-ul flx-card-4 flx-hoverable" id="deviceList">
+		 </ul>
+		 <button type="button" id="scanButton" class="flx-button flx-bar-item flx-round-xlarge flx-margin flx-text-white flx-blue">Pair New Device</button>
+         
+      </div>
+	  <div class="flx-container flx-card-4 flx-margin" id="outputCard">
+		<h4>Output</h4>
+         <div>
+            <p class="flx-margin" id="outputText"> Select or pair a device </p>
+         </div>
+      </div>
+	  <div class="flx-container flx-card-4 flx-margin">
+	  <h4>Serial Number</h4>
+         <div class="flx-bar">
+            <p class="flx-margin flx-bar-item" id="deviceSerial"></p>
+			<button id="copySerial" style="display:none" type="button" class="flx-button flx-bar-item flx-round-xlarge flx-margin flx-text-white flx-green">Copy Serial</button>
+         </div>
+      </div>
+      <div class="flx-container" id="deviceConfig">
+         <ul class="flx-ul flx-card-4 flx-hoverable" id="configList">
+		 </ul>
+      </div>
+	  <script src="ble.js"></script>
+   </body>
+</html>
